@@ -30,7 +30,7 @@ else
 fi
 }
 
-COMPATIBLE=$(cat /proc/device-tree/compatible)
+COMPATIBLE=$(cat /proc/device-tree/compatible | awk -F- '{print $2}')
 if [[ $(expr $COMPATIBLE : ".*rk3288") -ne 0 ]]; then
     CHIPNAME="rk3288"
 elif [[ $(expr $COMPATIBLE : ".*rk3308") -ne 0 ]]; then
