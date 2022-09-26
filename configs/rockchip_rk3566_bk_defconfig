@@ -1,0 +1,10 @@
+#include "base.config"
+#include "base_extra.config"
+#include "display.config"
+#include "network_only_eth.config"
+#include "ntfs.config"
+#include "qt.config"
+#include "rk356x_arm64.config"
+BR2_PACKAGE_QLAUNCHER=y
+BR2_PACKAGE_QFM=y
+BR2_PACKAGE_QT5BASE_WIDGETS=y
